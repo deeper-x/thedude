@@ -5,7 +5,7 @@ from sanic.log import logger as log
 from sanic import response
 from sanic.exceptions import ServerError
 from utils.database import Database
-from config.settings import *
+from settings.data import *
 app = Sanic(__name__)
 
 
