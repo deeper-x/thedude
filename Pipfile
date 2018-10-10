@@ -5,6 +5,9 @@ url = "https://pypi.org/simple"
 
 [packages]
 Sanic = "*"
+graphene = "*"
+"psycopg2" = "*"
+"psycopg2-binary" = "*"
 
 [dev-packages]
 
