@@ -2,7 +2,7 @@
 Web services - Sanic rulez 
 
 ##### Python Dook's porting #####
-Shipreporting BI service
+Shipreporting BI service based on Python/uvloop/asyncio/async-await
 
 |Exposed APIs:|
 |-------------|
