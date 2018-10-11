@@ -1,7 +1,6 @@
 import psycopg2
 from settings.db_auth import *
-import logging
-
+from sanic.log import logger as log
 
 class DbManager:
     """
@@ -15,27 +14,32 @@ class DbManager:
                                           dbname=DB_NAME)
 
             self._cur = self._conn.cursor()
+            log.debug("Operning connection and cursor...")
 
             return self
 
         except Exception as err:
-            logging.error(f"DB CONNECTION FAILED: {err}")
+            log.error(f"DB CONNECTION FAILED: {err}")
 
     def __exit__(self, *args):
         try:
             self._cur.close()
             self._conn.close()
-            logging.debug("Closing connection and cursor...")
+            log.debug("Closing connection and cursor...")
 
         except Exception as err:
-            logging.error("DB connection/cursor closing error")
+            log.error("DB connection/cursor closing error")
 
     def execute_query(self, query_str):
         self._cur.execute(query_str)
         return self._cur.fetchall()
 
-
     def proto_manage_select(self, func):
+        """
+        DEPRECATED
+        :param func: the callable
+        :return: callable
+        """
         def handle_params(*args):
             def wrapper():
                 self._connect()
