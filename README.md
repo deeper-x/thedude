@@ -6,7 +6,7 @@ Web services - Sanic rulez
 Shipreporting BI service based on Python/uvloop/asyncio/async-await
 
 
-![the Dude](http://s3.amazonaws.com/trampt/images/products/000/119/564/The_Big_Lebowski_-_The_Dude-Funko-Pop_Vinyl-Funko-trampt-119564m.jpg?1384552010)
+![the Dude](https://imgur.com/UjgpSVB)
 
 
 **Description**
