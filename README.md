@@ -6,7 +6,7 @@ Web services - Sanic rulez
 Shipreporting BI service based on Python/uvloop/asyncio/async-await
 
 
-![the Dude](https://imgur.com/UjgpSVB)
+![the Dude](https://i.imgur.com/UjgpSVB.jpg)
 
 
 **Description**
