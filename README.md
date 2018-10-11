@@ -8,6 +8,33 @@ Shipreporting BI service based on Python/uvloop/asyncio/async-await
 ![the Dude](http://s3.amazonaws.com/trampt/images/products/000/119/564/The_Big_Lebowski_-_The_Dude-Funko-Pop_Vinyl-Funko-trampt-119564m.jpg?1384552010)
 
 
+** Description **
+webservice consumed by Shipreporting client - live and historical data exposed via REST APIs
+
+** Usage **
+```bash
+$ pipenv --python 3.7
+$ pipenv install -r requirements.txt
+$ pipenv shell
+$ python app.py
+
+[201X-XX-XX 17:56:35 +0200] [20892] [INFO] Goin' Fast @ http://0.0.0.0:8000
+[201X-XX-XX 17:56:35 +0200] [20896] [INFO] BOOTSTRAPING...
+[201X-XX-XX 17:56:35 +0200] [20896] [INFO] BOOTSTRAP COMPLETED!
+[201X-XX-XX 17:56:35 +0200] [20896] [INFO] Starting worker [XXXXXX]
+
+
+$ curl -i http://127.0.0.1:8000/get_roadstead_now/28
+HTTP/1.1 200 OK
+Connection: keep-alive
+Keep-Alive: 5
+Content-Length: 323
+Content-Type: application/json
+
+[SHIPPING DATA OUTPUT OMITTED]
+
+```
+
 |Exposed APIs:|
 |-------------|
 
