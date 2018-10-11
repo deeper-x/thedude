@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2a3c8be-818b-49aa-8fec-1a9776e380aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/utils/db_tools.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/db_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/db_tools.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +43,7 @@
           <entry key="dummy" value="32" />
           <entry key="html" value="119" />
           <entry key="md" value="197" />
-          <entry key="py" value="5156" />
+          <entry key="py" value="7016" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -52,7 +51,7 @@
           <entry key="HTML" value="119" />
           <entry key="Markdown" value="197" />
           <entry key="PLAIN_TEXT" value="32" />
-          <entry key="Python" value="5156" />
+          <entry key="Python" value="7016" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -63,11 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="35" selection-start-line="3" selection-end-line="3" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -75,10 +71,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/db_tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="102">
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
+                <marker date="1539269302911" expanded="true" signature="159:164" ph="..." />
+                <marker date="1539269302911" expanded="true" signature="620:855" ph="..." />
+                <marker date="1539269302911" expanded="true" signature="1425:1687" ph="..." />
               </folding>
             </state>
           </provider>
@@ -125,11 +124,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/database.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+            <state relative-caret-position="34">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
-                <marker date="1539257357450" expanded="true" signature="182:229" ph="..." />
+                <element signature="e#0#41#0" expanded="true" />
+                <marker date="1539269117006" expanded="true" signature="176:265" ph="..." />
               </folding>
             </state>
           </provider>
@@ -162,6 +161,7 @@
       <find>)</find>
       <find>config</find>
       <find>close()</find>
+      <find>logging</find>
     </findStrings>
     <replaceStrings>
       <replace>=</replace>
@@ -169,6 +169,7 @@
       <replace>&quot;(</replace>
       <replace>)&quot;</replace>
       <replace>goodbye()</replace>
+      <replace>log</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -187,9 +188,9 @@
         <option value="$PROJECT_DIR$/data/query_tmpls/live_query.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/utils/db_wrapper.py" />
-        <option value="$PROJECT_DIR$/utils/db_tools.py" />
-        <option value="$PROJECT_DIR$/utils/database.py" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/utils/database.py" />
+        <option value="$PROJECT_DIR$/utils/db_tools.py" />
         <option value="$PROJECT_DIR$/settings/db_auth.py" />
       </list>
     </option>
@@ -299,6 +300,34 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="db_tools" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="thedude" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/db_tools.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.db_tools" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -316,12 +345,12 @@
     <frame x="-3" y="30" width="1372" height="715" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48809522" visible="true" weight="0.24981412" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48809522" visible="true" weight="0.24981412" />
       <window_info id="Structure" order="1" sideWeight="0.5119048" side_tool="true" visible="true" weight="0.24981412" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32993197" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -379,33 +408,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="35" selection-start-line="3" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils/database.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1539257357450" expanded="true" signature="182:229" ph="..." />
+            <element signature="e#0#41#0" expanded="true" />
+            <marker date="1539269117006" expanded="true" signature="176:265" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/db_tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="102">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1539269302911" expanded="true" signature="159:164" ph="..." />
+            <marker date="1539269302911" expanded="true" signature="620:855" ph="..." />
+            <marker date="1539269302911" expanded="true" signature="1425:1687" ph="..." />
           </folding>
         </state>
       </provider>

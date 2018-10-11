@@ -4,10 +4,10 @@ import logging
 
 
 class DbManager:
-    def __init__(self):
-        pass
-
-    def _connect(self):
+    """
+    @description: context manager protocol based utility class
+    """
+    def __enter__(self):
         try:
             self._conn = psycopg2.connect(user=USERNAME,
                                           password=PASSWORD,
@@ -16,24 +16,62 @@ class DbManager:
 
             self._cur = self._conn.cursor()
 
+            return self
+
         except Exception as err:
-            logging.error("DB CONNECTION FAILED")
+            logging.error(f"DB CONNECTION FAILED: {err}")
 
-    def _close(self):
-        self._cur.close()
-        self._conn.close()
+    def __exit__(self, *args):
+        try:
+            self._cur.close()
+            self._conn.close()
+            logging.debug("Closing connection and cursor...")
 
-    def _execute(self, query_str):
+        except Exception as err:
+            logging.error("DB connection/cursor closing error")
+
+    def execute_query(self, query_str):
         self._cur.execute(query_str)
         return self._cur.fetchall()
 
-    def execute_select(self, query_str):
-        self._connect()
-        data = self._execute(query_str)
-        self._close()
 
-        return data
+    def proto_manage_select(self, func):
+        def handle_params(*args):
+            def wrapper():
+                self._connect()
+                self._res = func(*args)
+                self._close()
+                return self._res
+            return wrapper
+        return handle_params
 
 
 if __name__ == '__main__':
-    o = DbManager()
+    """ 
+    DECORATOR BEHAVIOUR PROTOTYPIZATION - 
+    just evaluating if could be implemented
+    """
+
+    def my_decorator(func):
+        def handle_params(something):
+            def wrapper():
+                print("#TODO CONNECTION...")
+                func(something)
+                print("#TODO CLOSE ALL...")
+            return wrapper
+        return handle_params
+
+    @my_decorator
+    def foo(what):
+        print(f"say something: {what}")
+
+    """
+    i_handle_params = my_decorator(foo)
+
+    o_call = i_handle_params("something")
+
+    o_call()
+    """
+
+    o = foo("some demo params")
+    o()
