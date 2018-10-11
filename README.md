@@ -1,17 +1,20 @@
 # The Dude [WIP]
 Web services - Sanic rulez 
 
-##### Python Dook's porting #####
+**Python Dook's porting**
+
 Shipreporting BI service based on Python/uvloop/asyncio/async-await
 
 
 ![the Dude](http://s3.amazonaws.com/trampt/images/products/000/119/564/The_Big_Lebowski_-_The_Dude-Funko-Pop_Vinyl-Funko-trampt-119564m.jpg?1384552010)
 
 
-** Description **
+**Description**
+
 webservice consumed by Shipreporting client - live and historical data exposed via REST APIs
 
-** Usage **
+**Usage**
+
 ```bash
 $ pipenv --python 3.7
 $ pipenv install -r requirements.txt
@@ -35,8 +38,8 @@ Content-Type: application/json
 
 ```
 
-|Exposed APIs:|
-|-------------|
+**Exposed APIs**
+
 
 **REAL TIME DATA:**
 

@@ -1,15 +1,14 @@
 [[source]]
-name = "pypi"
 verify_ssl = true
+name = "pypi"
 url = "https://pypi.org/simple"
-
-[packages]
-Sanic = "*"
-graphene = "*"
-"psycopg2" = "*"
-"psycopg2-binary" = "*"
-
-[dev-packages]
 
 [requires]
 python_version = "3.6"
+
+[dev-packages]
+
+[packages]
+"psycopg2" = "*"
+"psycopg2-binary" = "*"
+Sanic = "*"
