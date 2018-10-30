@@ -1,5 +1,5 @@
 import psycopg2
-from settings.db_auth import *
+from settings.priv_db_auth import *
 from sanic.log import logger as log
 
 class DbManager:
